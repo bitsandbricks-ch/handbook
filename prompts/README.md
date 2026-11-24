@@ -13,5 +13,5 @@ that `mason sync` ships with the repo.
 | [catch-up](catch-up.md) | The handbook changed and a repo should follow | Repos whose `.mason.toml` pins an older handbook version |
 | [ui-migration](ui-migration.md) | Moving an app onto `@bitsandbricks/tokens`, `ui` and `widgets` | Hubra, Floorbit (ui); Labdex, Mason, Seatbit (tokens only) |
 
-Every prompt keeps the same rules: draft PRs, one topic per branch, never merge, never push
-tags, never change versions, never weaken a check, ask instead of guessing.
+Every prompt keeps the same rules: draft PRs marked ready for review once done and green,
+one topic per branch, never merge, never push tags, never change versions, never weaken a check, ask instead of guessing.

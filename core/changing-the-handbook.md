@@ -12,7 +12,7 @@ Projects feed the handbook. The test for where a decision goes:
 
 1. Someone (a person or an agent) meets something the handbook doesn't cover, or wants to differ from it.
 2. They say so in the project PR under a **Handbook** heading.
-3. If it is reusable, they open a draft PR here with the decision record or chapter change, and link the two PRs. The project PR may merge first as a **pilot**.
+3. If it is reusable, they open a PR here (draft until done, then ready for review) with the decision record or chapter change, and link the two PRs. The project PR may merge first as a **pilot**.
 4. When the handbook PR merges, the rule applies to every repo. The PR says which repos it affects and how they follow (usually `mason sync`, or a follow-up PR per repo).
 
 ## Rules

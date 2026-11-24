@@ -57,6 +57,6 @@ LICENSE.md   CC BY 4.0 for the text, MIT for templates and skills
 
 ## Changing the handbook
 
-Open a draft PR. A rule change that affects other repos says which ones and how they
-follow (usually a `mason sync` run). Releases are tagged `v1`, `v1.1`, ...; repos pin the
+Open a draft PR and mark it ready for review when it is done. A rule change that affects
+other repos says which ones and how they follow (usually a `mason sync` run). Releases are tagged `v1`, `v1.1`, ...; repos pin the
 major version in `.mason.toml`.

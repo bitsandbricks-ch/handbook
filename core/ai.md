@@ -1,6 +1,6 @@
 # Agents and AI
 
-Coding agents work like any contributor: on a branch, through a draft PR, and they never merge, release or touch production.
+Coding agents work like any contributor: on a branch, through a PR (a draft while in progress, marked ready for review once done and green), and they never merge, release or touch production.
 
 ## Instructions
 

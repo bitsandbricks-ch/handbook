@@ -13,8 +13,8 @@ Before you start:
 3. Read this repo's AGENTS.md. Where it differs from the handbook, AGENTS.md wins for this repo.
 
 While you work:
-- Follow core/git-and-prs.md: your own branch, a draft PR with the template, never merge,
-  never push tags, never change versions by hand.
+- Follow core/git-and-prs.md: your own branch, a draft PR with the template, marked ready
+  for review once done and green, never merge, never push tags, never change versions by hand.
 - Follow core/security.md: read-only first, permission checks on the server, no secrets,
   no real hosts, domains or IPs (use example.com).
 - Use the skills in skills/ when they fit (release, new-migration, pr-review,
