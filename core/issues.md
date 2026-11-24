@@ -47,7 +47,7 @@ GitLab's `::` scoped labels need a paid tier, so both hosts use the single colon
 | Done | closed by the merged PR | closed by the merged MR |
 | Won't do | closed as "not planned" with the reason | closed with the reason |
 
-- **Milestones** are releases (`v1.4`) or dated goals; `mason bump` lists what a release closes.
+- **Milestones** are releases (`v1.4`) or dated goals; the release notes list the PRs that closed them.
 - **Boards:** one GitHub Project per org (`bitsandbricks-ch`, each app org) with the columns of
   the lifecycle; GitLab uses its issue board per group. Mason shows both in one list
   (`mason issues --mine`, `mason issues --label blocked`).
