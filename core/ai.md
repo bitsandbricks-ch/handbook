@@ -8,6 +8,11 @@ Coding agents work like any contributor: on a branch, through a draft PR, and th
 - `AGENTS.md` names the profile, links this handbook, and lists only what is specific to the repo. Start from [the template](../templates/AGENTS.md).
 - Commits written by an agent carry a `Co-Authored-By` line; PR bodies say they were generated.
 
+## Prompts
+
+- For chats and one-off jobs, use the [prompts](../prompts/): start, audit, adopt, new project, catch-up, UI migration.
+- A prompt that gets pasted again and again inside repos becomes a skill.
+
 ## Skills
 
 - BitsAndBricks skills live in [`skills/`](../skills/) here and are synced into repos by `mason sync`, pinned by hash (like Hubra's `skills-lock.json`).
