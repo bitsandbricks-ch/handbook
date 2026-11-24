@@ -11,3 +11,4 @@ Rules every BitsAndBricks project follows, whatever its profile.
 - [Docs](docs.md)
 - [Agents and AI](ai.md)
 - [Avoiding merge conflicts](merge-conflicts.md)
+- [Changing the handbook](changing-the-handbook.md)

@@ -13,7 +13,7 @@ stacks and adopt the shared tokens and rules; new apps start on the standard.
 | Jobs | A job table and worker inside the app before Redis or Celery | Labdex |
 | Auth | SSO across apps, MFA for admins, scoped API tokens | Hubra |
 | i18n | German and English from day one | Hubra, Floorbit |
-| Deploy | Docker image per app, Compose for self-hosting, k3s and Flux for the cluster | all |
+| Deploy | Docker image per app, Compose for self-hosting, k3s and Flux for the cluster ([Kubernetes](kubernetes.md)) | all |
 | Observability | `/healthz`, `/metrics` for VictoriaMetrics, JSON logs with an `audit` flag | Plumb, Labdex agents |
 | Static sites | Astro | bitsandbricks.ch |
 | Small services and agents | Go when one binary must run where you control nothing | Plumb; Labdex agent next |
@@ -25,4 +25,5 @@ Chapters:
 - [Modules, plugins and signing](modules-and-plugins.md)
 - [Local agents](local-agents.md)
 - [Agent protocol](agent-protocol.md)
+- [Kubernetes and GitOps](kubernetes.md)
 - [UI, tokens and brand](ui-and-brand.md)

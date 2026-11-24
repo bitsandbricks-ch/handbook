@@ -8,6 +8,7 @@
 | `mobile` (proposed) | React Native with Expo; Capacitor when the app is mostly forms and lists | Store release flow, React Native versions of the core components | none yet |
 | `static-site` | Astro, tokens | Built and deployed by CI, no server | bitsandbricks.ch |
 | `cli-tool` | Python or Go | One install command, `--help` on every command | Mason |
+| `infra` | [Kubernetes and GitOps](../blocks/kubernetes.md), security, releases | Flux applies from git; reviewed MRs; backup and rollback note for production; no apply to public production without Mike's go-ahead | the cluster repo |
 | `agent` | [agent contract](../blocks/local-agents.md), Go or Python | Signed packages | Floorbit agent, Labdex agent |
 
 Desktop and mobile stay "proposed" until the first real app of that kind, so their rules
