@@ -1,11 +1,8 @@
 # Code
 
-| Language | Format and lint | Types |
-| --- | --- | --- |
-| Python 3.12 | `ruff format`, `ruff check` | Pyright or mypy on new code |
-| TypeScript | eslint, prettier (or the repo's existing formatter) | `strict` |
-| Go | `gofmt`, `go vet`, staticcheck | |
-| Shell | shellcheck | |
+Formatters, linters and hooks for every language are in [tooling](tooling.md): ruff for Python,
+ESLint and Prettier for TypeScript and Vue, golangci-lint for Go, plus shellcheck, yamllint,
+hadolint, ansible-lint, tflint and gitleaks, all run by `pre-commit` and CI.
 
 - Comments explain **why**, not what. Short.
 - Names: say what a thing is in the words users use; no abbreviations a newcomer can't guess.

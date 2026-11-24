@@ -6,6 +6,7 @@
 | --- | --- | --- |
 | A product with its own plugins | its own org | `hubra-app/*`, `labdex-app/*` |
 | Shared tools, small apps, the website | `bitsandbricks-ch` | handbook, Mason, Plumb, Floorbit, Seatbit, bitsandbricks.ch |
+| The tools published under mortar.ch and their landing page | `mortar-ch` ([0013](../decisions/0013-mortar-ch-org.md)) | mortar.ch |
 | Private experiments | the personal account | |
 
 A product org holds the core, its CLI, plugins, the plugin template and the marketplace index together. Anything public moves to an org.
@@ -32,9 +33,7 @@ Kept as JSON in `.mason/rulesets/` and applied by `mason doctor --fix`.
 
 ## Issues and labels
 
-- Issue forms: bug, feature, question. Blank issues off. Security reports go through private vulnerability reporting, never an issue.
-- One label set everywhere: `type:bug|feature|docs|chore`, `area:<part of the app>`, `prio:high|normal|low`, `good first issue`, `blocked`.
-- An agent never closes an issue it did not open; it links the PR that fixes it.
+How work is tracked, the label set, forms and boards, on GitHub and GitLab: [issues and tracking](issues.md).
 
 ## CI/CD
 
@@ -42,7 +41,7 @@ Kept as JSON in `.mason/rulesets/` and applied by `mason doctor --fix`.
 - Pin every action to a full commit sha with the version as a comment: `uses: actions/checkout@<sha> # v4.2.2`.
 - `permissions:` minimal, set per job. Never put `${{ github.event.* }}` text straight into a `run:` script; pass it through `env:`.
 - One required check per repo, `CI passed`, that waits on the others. Rulesets never need editing when jobs change.
-- Images: `latest` = newest release, `dev` = newest commit on `main`, plus `sha-<7hex>`.
+- Images and releases: see [image tags](releases.md#image-tags) and [how a release runs](releases.md#how-a-release-runs).
 - Production deploys go through a GitHub environment with the maintainer as required reviewer. Public production is never deployed without Mike's go-ahead.
 - Jobs that hold a signing key pin the app to a release tag, never `main`.
 

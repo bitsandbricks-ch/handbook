@@ -1,0 +1,7 @@
+# The static-site profile: what `mason check`, `mason doctor` and `mason sync` hold a repo to.
+# The rules themselves are in the chapters; README.md in this folder compares the profiles.
+description = "A static site built with Astro and deployed by CI"
+chapters = ["blocks/README.md", "blocks/ui-and-brand.md"]
+files = ["AGENTS.md", "CLAUDE.md", "README.md", "LICENSE|LICENSE.md", "SECURITY.md|.github/SECURITY.md", "renovate.json|.github/renovate.json|renovate.json5", ".pre-commit-config.yaml", ".editorconfig"]
+labels = ["type:bug", "type:feature", "type:docs", "type:chore", "type:security", "prio:high", "prio:normal", "prio:low", "needs-triage", "good first issue", "blocked", "handbook"]
+skills = ["pr-review"]

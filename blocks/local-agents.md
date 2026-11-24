@@ -23,3 +23,6 @@ Every agent follows the same contract, whatever its language. The language follo
 - Each write ability switched on separately, at both ends. Root only as a per-host opt-in.
 - Offline buffer, health and metrics, updates only from signed releases, audit log at both ends.
 - One written protocol: [agent protocol](agent-protocol.md), with tests that a Go and a Python agent both pass.
+
+The Floorbit agent differs on purpose: it opens SSH to switches, its features are on by default,
+and it speaks its own protocol. Its `AGENTS.md` says why.
