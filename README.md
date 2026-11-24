@@ -44,7 +44,7 @@ version = "v1"
 ```
 core/        every project
 blocks/      pick what you use
-profiles/    web-app, api-only, desktop, mobile, static-site, cli-tool, multi-tool, agent, service, plugin, library, template, docs, infra
+profiles/    web-app, api-only, desktop, mobile, static-site, cli-tool, multi-tool, agent, service, plugin, marketplace, library, template, docs, infra
 decisions/   one short record per decision
 templates/   AGENTS.md, .mason.toml, repo skeletons
 guides/      step-by-step how-tos
