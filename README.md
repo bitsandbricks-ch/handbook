@@ -36,6 +36,7 @@ version = "v1"
 | Agents | [agent protocol](blocks/agent-protocol.md) |
 | Brand | [brand guide](brand/README.md) |
 | Templates | [AGENTS.md](templates/AGENTS.md) · [.mason.toml](templates/mason.toml) · [pre-commit](templates/pre-commit-config.yaml) · [.editorconfig](templates/editorconfig) · [issue forms](templates/issues/) |
+| Guides | [all guides](guides/README.md): [set up Mason](guides/set-up-mason.md) |
 | Prompts | [all prompts](prompts/README.md): [start](prompts/start.md) · [audit](prompts/audit.md) · [adopt](prompts/adopt.md) · [new project](prompts/new-project.md) · [catch-up](prompts/catch-up.md) · [UI migration](prompts/ui-migration.md) |
 
 ## Layout
@@ -46,6 +47,7 @@ blocks/      pick what you use
 profiles/    web-app, api-only, desktop, mobile, static-site, cli-tool, multi-tool, agent, service, plugin, library, template, docs, infra
 decisions/   one short record per decision
 templates/   AGENTS.md, .mason.toml, repo skeletons
+guides/      step-by-step how-tos
 prompts/     copy-paste prompts for agent chats
 skills/      shared agent skills, synced into repos by mason sync
 brand/       the generic brand guide (app assets live in each app's brand/)
