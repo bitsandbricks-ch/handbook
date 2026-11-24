@@ -10,7 +10,7 @@ Coding agents work like any contributor: on a branch, through a draft PR, and th
 
 ## Skills
 
-- BitsAndBricks skills live in [`skills/`](../skills/) here and are synced into repos by `bnb sync`, pinned by hash (like Hubra's `skills-lock.json`).
+- BitsAndBricks skills live in [`skills/`](../skills/) here and are synced into repos by `mason sync`, pinned by hash (like Hubra's `skills-lock.json`).
 - Third-party skills are added only after a read-through: a skill is instructions an agent will follow.
 - Planned first set: `release`, `new-migration`, `new-module`, `new-plugin`, `docs-screenshots`, `pr-review` (this handbook as a checklist), `security-review`.
 

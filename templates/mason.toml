@@ -1,3 +1,5 @@
-# .mason.toml in an app repo
-profile  = "web-app"   # web-app | api-only | desktop | mobile | static-site | cli-tool | agent
-handbook = "v1"
+# The [handbook] table of an app repo's .mason.toml (Mason's per-repo settings file).
+# TODO: Mason reads this table (profile checks in `mason doctor`).
+[handbook]
+profile = "web-app"   # web-app | api-only | desktop | mobile | static-site | cli-tool | agent
+version = "v1"

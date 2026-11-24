@@ -12,4 +12,4 @@ Most conflicts come from files everyone edits. Each chapter has a short box with
 | Formatting | whitespace, import order | Formatters in CI and a pre-commit hook |
 | CSS | one global stylesheet | Tokens shared; styles live with their component |
 | Branches | long-lived branches | Small PRs, one topic, merge `main` in daily, never rebase a shared branch |
-| Shared repo files | the same file edited per repo | Owned by this handbook, synced by `bnb sync` |
+| Shared repo files | the same file edited per repo | Owned by this handbook, synced by `mason sync` |
