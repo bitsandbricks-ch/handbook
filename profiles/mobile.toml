@@ -1,0 +1,11 @@
+# The mobile profile: what `mason check`, `mason doctor` and `mason sync` hold a repo to.
+# The rules themselves are in the chapters; README.md in this folder compares the profiles.
+description = "A mobile app with React Native and Expo"
+status = "proposed"
+chapters = ["blocks/README.md", "blocks/ui-and-brand.md"]
+files = ["AGENTS.md", "CLAUDE.md", "README.md", "LICENSE|LICENSE.md", "SECURITY.md|.github/SECURITY.md", "renovate.json|.github/renovate.json|renovate.json5", "CHANGELOG.md|changelog.d"]
+labels = ["type:bug", "type:feature", "type:docs", "type:chore", "prio:high", "prio:normal", "prio:low", "good first issue", "blocked"]
+skills = ["release", "pr-review", "security-review"]
+
+[check]
+fragments = "changelog.d"

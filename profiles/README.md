@@ -12,5 +12,10 @@
 | `infra` | [Kubernetes and GitOps](../blocks/kubernetes.md), security, releases | Flux applies from git; reviewed MRs; backup and rollback note for production; no apply to public production without Mike's go-ahead | the cluster repo |
 | `agent` | [agent contract](../blocks/local-agents.md), Go or Python | Signed packages | Floorbit agent, Labdex agent |
 
+Each profile also has a `<name>.toml` here that Mason reads: the chapters on top of `core/`, the files a repo
+must have, the labels, the agent skills `mason sync` copies into `.claude/skills`, and what `mason check` looks
+at offline (changelog fragments, one migration head). `mason handbook` prints a repo's chapters, `mason adopt`
+starts a repo on a profile, and `mason lint` checks these files. Change a profile here, not in the repos.
+
 Desktop and mobile stay "proposed" until the first real app of that kind, so their rules
 come from a real project.
