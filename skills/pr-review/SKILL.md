@@ -15,3 +15,4 @@ Check the diff, not the whole repo. For each point that fails, say file, line an
 - [ ] Actions pinned to a sha; `permissions` minimal.
 - [ ] UI: empty and loading states, accent colour only for plan, approve and apply.
 - [ ] Comments say why; no dead code; no new dependency without a reason in the PR.
+- [ ] Does this need a handbook update? If another repo should do the same, or this differs from the handbook, add a **Handbook** note and open a handbook PR ([changing the handbook](https://github.com/bitsandbricks-ch/handbook/blob/main/core/changing-the-handbook.md)).
