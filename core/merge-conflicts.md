@@ -5,7 +5,7 @@ Most conflicts come from files everyone edits. Each chapter has a short box with
 | Area | Conflict source | Rule |
 | --- | --- | --- |
 | Changelog | one shared `CHANGELOG.md` | One fragment file per change in `changelog.d/`, collected at release |
-| Migrations | numbered files two branches both take | Timestamped Alembic revisions; CI fails on two heads |
+| Migrations | numbered files two branches both take | Timestamped Alembic revisions; CI fails on two heads, or several heads allowed when a test checks they change different tables ([0006](../decisions/0006-several-migration-heads.md)) |
 | Nav, routes, settings, permissions | one central list | Each module registers its own |
 | Translations | one big file per language | One file per module and language |
 | Versions, lockfiles | hand edits in feature PRs | Only release tooling and the dependency bot touch them; lockfiles marked generated |
