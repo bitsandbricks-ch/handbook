@@ -5,7 +5,7 @@ description: Review a diff against the BitsAndBricks handbook before pushing or 
 
 Check the diff, not the whole repo. For each point that fails, say file, line and the fix.
 
-- [ ] One topic; the PR template filled in; the issue linked; the PR title follows Conventional Commits.
+- [ ] One topic; the PR template filled in; the issue linked with a closing keyword; the PR title follows Conventional Commits.
 - [ ] `pre-commit run --all-files` passes.
 - [ ] CI's commands pass locally (from the repo's `AGENTS.md`).
 - [ ] No secrets, real hosts, domains, IPs or personal data; examples use `example.com`.

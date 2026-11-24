@@ -2,7 +2,7 @@
 
 - Never push to `main`. One topic per branch and per PR.
 - Branch names: `<type>/<short-topic>` for people (`fix/safari-export`), `claude/<topic>` for agents.
-- Open PRs as **drafts**, fill in the template, link the issue (`Fixes #12`).
+- Open PRs as **drafts**, fill in the template, link the issue (`Fixes #12` on GitHub, `Closes #12` on GitLab); see [issues](issues.md).
 - Before pushing, run what CI runs. Fix failing checks yourself; never skip, disable or weaken a test or a check to get green.
 - **Done** = task complete, checklist ticked, checks green; then mark ready for review.
 - Never merge your own PR, never force-push a branch someone else works on, never push a tag. Merging and releasing are the maintainer's call.

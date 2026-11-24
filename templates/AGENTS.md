@@ -17,6 +17,7 @@ lists. The rules below are only what is specific to this repo.
 
 ## Repo-specific rules
 
+- Work from an issue: open one if there is none, comment when you start and when blocked, link it from the PR.
 - Commits and PR titles follow Conventional Commits, with these scopes: <scopes>.
 
 - <rule>
