@@ -18,10 +18,11 @@ stacks and adopt the shared tokens and rules; new apps start on the standard.
 | Static sites | Astro | bitsandbricks.ch |
 | Small services and agents | Go when one binary must run where you control nothing | Plumb; Labdex agent next |
 
-Open: Renovate or Dependabot (Hubra uses Renovate, the rest Dependabot). TODO: decide.
+Dependencies are updated by Renovate in every repo ([decision 0005](../decisions/0005-renovate.md)).
 
 Chapters:
 
 - [Modules, plugins and signing](modules-and-plugins.md)
 - [Local agents](local-agents.md)
+- [Agent protocol](agent-protocol.md)
 - [UI, tokens and brand](ui-and-brand.md)

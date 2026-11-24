@@ -12,16 +12,16 @@ A product org holds the core, its CLI, plugins, the plugin template and the mark
 
 ## Repo settings
 
-Enforced by `bnb doctor` from [`mason.toml`](../mason.toml):
+Enforced by `mason doctor` from `mason.toml` in [`.mason`](https://github.com/bitsandbricks-ch/.mason):
 
 - Auto-merge allowed, delete branch on merge, wiki and projects off unless used.
-- Secret scanning and push protection on, private vulnerability reporting on, Dependabot alerts on.
+- Secret scanning and push protection on, private vulnerability reporting on, Dependabot security alerts on; version updates come from Renovate.
 - Default branch `main`; squash merge only.
 - Description, homepage and topics filled in.
 
 ## Branch and tag rules
 
-Kept as JSON in [`rulesets/`](../rulesets/) and applied by Mason.
+Kept as JSON in `.mason/rulesets/` and applied by `mason doctor --fix`.
 
 | Target | Rule |
 | --- | --- |
@@ -46,4 +46,4 @@ Kept as JSON in [`rulesets/`](../rulesets/) and applied by Mason.
 - Production deploys go through a GitHub environment with the maintainer as required reviewer. Public production is never deployed without Mike's go-ahead.
 - Jobs that hold a signing key pin the app to a release tag, never `main`.
 
-> **Avoiding conflicts:** shared files (issue forms, PR template, dependabot, `.gitattributes`, rulesets) are owned here and synced by `bnb sync`. Edit them here, never in the app repo.
+> **Avoiding conflicts:** shared files (issue forms, PR template, dependabot, `.gitattributes`, rulesets) are owned here and synced by `mason sync`. Edit them here, never in the app repo.
