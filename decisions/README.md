@@ -13,3 +13,5 @@ Agents read these before proposing a change to a settled question.
 | [0006](0006-several-migration-heads.md) | Several migration heads are allowed when a test checks them | 2026-11-24 |
 | [0007](0007-validation-library-per-app.md) | Existing apps keep their validation library | 2026-11-24 |
 | [0008](0008-runtime-settings-in-the-app.md) | Settings admins change live in the app, env gives the default | 2026-11-24 |
+| [0014](0014-one-release-flow.md) | One release flow: Mason tags, the workflow publishes and creates the release | 2026-11-24 |
+| [0015](0015-image-tags.md) | Image tags: `dev` and `sha-*` from `main`, versions promoted on release | 2026-11-24 |

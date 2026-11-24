@@ -42,7 +42,7 @@ Kept as JSON in `.mason/rulesets/` and applied by `mason doctor --fix`.
 - Pin every action to a full commit sha with the version as a comment: `uses: actions/checkout@<sha> # v4.2.2`.
 - `permissions:` minimal, set per job. Never put `${{ github.event.* }}` text straight into a `run:` script; pass it through `env:`.
 - One required check per repo, `CI passed`, that waits on the others. Rulesets never need editing when jobs change.
-- Images: `latest` = newest release, `dev` = newest commit on `main`, plus `sha-<7hex>`.
+- Images and releases: see [image tags](releases.md#image-tags) and [how a release runs](releases.md#how-a-release-runs).
 - Production deploys go through a GitHub environment with the maintainer as required reviewer. Public production is never deployed without Mike's go-ahead.
 - Jobs that hold a signing key pin the app to a release tag, never `main`.
 
