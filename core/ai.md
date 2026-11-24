@@ -2,6 +2,14 @@
 
 Coding agents work like any contributor: on a branch, through a PR (a draft while in progress, marked ready for review once done and green), and they never merge, release or touch production.
 
+## Reading the handbook
+
+- Before starting any task, read the latest handbook from `main`: its core chapters, plus any
+  block chapter that matches the task. Don't rely on a copy from earlier.
+- If the handbook and a project's instructions disagree, the handbook wins. Say so, and suggest a
+  fix for whichever one is out of date.
+- When a handbook PR merges while work is running, re-read the changed chapters before the next push.
+
 ## Instructions
 
 - `AGENTS.md` is the one instruction file every tool reads (Claude Code, Codex, Copilot, opencode). `CLAUDE.md` only contains `@AGENTS.md`.
