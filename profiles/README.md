@@ -31,9 +31,10 @@
 | `infra` | `flux build`, kubeconform, ingress label check, `tofu plan`, `ansible-lint`, `--check` runs |
 | `static-site`, `docs` | build, link check |
 
-A repo that holds two kinds of project names both, main one first
-(`profile = ["static-site", "service"]`, [0011](../decisions/0011-several-profiles-per-repo.md)),
-and its `AGENTS.md` says which folders follow which.
+Each profile also has a `<name>.toml` here that Mason reads: the chapters on top of `core/`, the files a repo
+must have, the labels, the agent skills `mason sync` copies into `.claude/skills`, and what `mason check` looks
+at offline (changelog fragments, one migration head). `mason handbook` prints a repo's chapters, `mason adopt`
+starts a repo on a profile, and `mason lint` checks these files. Change a profile here, not in the repos.
 
 Desktop and mobile stay "proposed" until the first real app of that kind, so their rules
 come from a real project.

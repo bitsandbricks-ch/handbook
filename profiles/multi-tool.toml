@@ -1,0 +1,11 @@
+# The multi-tool profile: what `mason check`, `mason doctor` and `mason sync` hold a repo to.
+# The rules themselves are in the chapters; README.md in this folder compares the profiles.
+description = "One core with a CLI, a TUI and a web app on top"
+chapters = ["blocks/README.md", "blocks/modules-and-plugins.md", "blocks/ui-and-brand.md", "blocks/kubernetes.md"]
+files = ["AGENTS.md", "CLAUDE.md", "README.md", "LICENSE|LICENSE.md", "SECURITY.md|.github/SECURITY.md", "renovate.json|.github/renovate.json|renovate.json5", ".pre-commit-config.yaml", ".editorconfig", "CHANGELOG.md|changelog.d", "Dockerfile"]
+labels = ["type:bug", "type:feature", "type:docs", "type:chore", "type:security", "prio:high", "prio:normal", "prio:low", "needs-triage", "good first issue", "blocked", "handbook"]
+skills = ["release", "pr-review", "security-review", "new-migration", "new-plugin"]
+
+[check]
+fragments = "changelog.d"
+migrations = true

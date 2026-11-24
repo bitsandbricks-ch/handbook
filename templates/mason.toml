@@ -1,6 +1,7 @@
 # The [handbook] table of an app repo's .mason.toml (Mason's per-repo settings file).
-# TODO: Mason reads this table (profile checks in `mason doctor`).
+# Mason reads it: `mason check`, `mason doctor`, `mason sync` (skills) and `mason handbook`; `mason adopt` writes it.
 [handbook]
+repo = "bitsandbricks-ch/handbook"
 profile = "web-app"   # web-app | api-only | desktop | mobile | static-site | cli-tool | multi-tool | agent | service | plugin | library | template | docs | infra
 version = "v1"
 # A repo with two kinds of project lists both, main one first (decision 0011):
