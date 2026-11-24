@@ -16,3 +16,5 @@ Agents read these before proposing a change to a settled question.
 | [0011](0011-several-profiles-per-repo.md) | A repo may name several profiles | 2026-11-24 |
 | [0012](0012-no-changelog-without-releases.md) | No changelog for repos that are never released | 2026-11-24 |
 | [0013](0013-mortar-ch-org.md) | The mortar-ch org for the mortar.ch tools | 2026-11-24 |
+| [0014](0014-one-release-flow.md) | One release flow: Mason tags, the workflow publishes and creates the release | 2026-11-24 |
+| [0015](0015-image-tags.md) | Image tags: `dev` and `sha-*` from `main`, versions promoted on release | 2026-11-24 |
