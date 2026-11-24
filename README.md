@@ -42,7 +42,7 @@ version = "v1"
 ```
 core/        every project
 blocks/      pick what you use
-profiles/    web-app, api-only, desktop, mobile, static-site, cli-tool, multi-tool, agent, infra
+profiles/    web-app, api-only, desktop, mobile, static-site, cli-tool, multi-tool, agent, infra, plugin
 decisions/   one short record per decision
 templates/   AGENTS.md, .mason.toml, repo skeletons
 skills/      shared agent skills, synced into repos by mason sync
