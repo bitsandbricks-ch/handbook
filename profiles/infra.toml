@@ -1,7 +1,7 @@
 # The infra profile: what `mason check`, `mason doctor` and `mason sync` hold a repo to.
 # The rules themselves are in the chapters; README.md in this folder compares the profiles.
 description = "A cluster repo: Kubernetes and Flux applied from git"
-chapters = ["blocks/kubernetes.md", "blocks/kubernetes/layers.md", "blocks/kubernetes/flux.md", "blocks/kubernetes/exposure.md", "blocks/kubernetes/runbooks.md"]
-files = ["AGENTS.md", "CLAUDE.md", "README.md", "LICENSE|LICENSE.md", "SECURITY.md|.github/SECURITY.md", "renovate.json|.github/renovate.json|renovate.json5"]
-labels = ["type:bug", "type:feature", "type:docs", "type:chore", "prio:high", "prio:normal", "prio:low", "good first issue", "blocked"]
+chapters = ["blocks/kubernetes.md", "blocks/kubernetes/layers.md", "blocks/kubernetes/flux.md", "blocks/kubernetes/exposure.md", "blocks/kubernetes/runbooks.md", "blocks/ansible.md", "blocks/opentofu.md"]
+files = ["AGENTS.md", "CLAUDE.md", "README.md", "LICENSE|LICENSE.md", "SECURITY.md|.github/SECURITY.md", "renovate.json|.github/renovate.json|renovate.json5", ".pre-commit-config.yaml", ".editorconfig"]
+labels = ["type:bug", "type:feature", "type:docs", "type:chore", "type:security", "prio:high", "prio:normal", "prio:low", "needs-triage", "good first issue", "blocked", "handbook"]
 skills = ["pr-review", "security-review"]

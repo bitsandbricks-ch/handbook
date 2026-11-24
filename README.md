@@ -29,22 +29,24 @@ version = "v1"
 
 | Part | Pages |
 | --- | --- |
-| Core | [principles](core/principles.md) · [code](core/code.md) · [git and PRs](core/git-and-prs.md) · [GitHub](core/github.md) · [releases](core/releases.md) · [security](core/security.md) · [docs](core/docs.md) · [agents and AI](core/ai.md) · [merge conflicts](core/merge-conflicts.md) · [changing the handbook](core/changing-the-handbook.md) |
-| Blocks | [stack standard](blocks/README.md) · [modules and plugins](blocks/modules-and-plugins.md) · [local agents](blocks/local-agents.md) · [UI and brand](blocks/ui-and-brand.md) · [Kubernetes](blocks/kubernetes.md) ([spec](blocks/kubernetes/), [templates](templates/kubernetes/)) |
+| Core | [principles](core/principles.md) · [code](core/code.md) · [git and PRs](core/git-and-prs.md) · [GitHub](core/github.md) · [issues](core/issues.md) · [releases](core/releases.md) · [security](core/security.md) · [docs](core/docs.md) · [agents and AI](core/ai.md) · [tooling](core/tooling.md) · [merge conflicts](core/merge-conflicts.md) · [changing the handbook](core/changing-the-handbook.md) |
+| Blocks | [stack standard](blocks/README.md) · [modules and plugins](blocks/modules-and-plugins.md) · [local agents](blocks/local-agents.md) · [UI and brand](blocks/ui-and-brand.md) · [Kubernetes](blocks/kubernetes.md) ([spec](blocks/kubernetes/), [templates](templates/kubernetes/)) · [Ansible](blocks/ansible.md) · [OpenTofu](blocks/opentofu.md) |
 | Profiles | [all profiles](profiles/README.md) |
 | Decisions | [decision records](decisions/) |
 | Agents | [agent protocol](blocks/agent-protocol.md) |
 | Brand | [brand guide](brand/README.md) |
-| Templates | [AGENTS.md](templates/AGENTS.md) · [.mason.toml](templates/mason.toml) · [prompt for agent chats](templates/prompt.md) |
+| Templates | [AGENTS.md](templates/AGENTS.md) · [.mason.toml](templates/mason.toml) · [pre-commit](templates/pre-commit-config.yaml) · [.editorconfig](templates/editorconfig) · [issue forms](templates/issues/) |
+| Prompts | [all prompts](prompts/README.md): [start](prompts/start.md) · [audit](prompts/audit.md) · [adopt](prompts/adopt.md) · [new project](prompts/new-project.md) · [catch-up](prompts/catch-up.md) · [UI migration](prompts/ui-migration.md) |
 
 ## Layout
 
 ```
 core/        every project
 blocks/      pick what you use
-profiles/    web-app, api-only, desktop, mobile, static-site, cli-tool, multi-tool, agent, infra
+profiles/    web-app, api-only, desktop, mobile, static-site, cli-tool, multi-tool, agent, service, plugin, library, template, docs, infra
 decisions/   one short record per decision
 templates/   AGENTS.md, .mason.toml, repo skeletons
+prompts/     copy-paste prompts for agent chats
 skills/      shared agent skills, synced into repos by mason sync
 brand/       the generic brand guide (app assets live in each app's brand/)
 tokens/      shared design tokens package (planned)

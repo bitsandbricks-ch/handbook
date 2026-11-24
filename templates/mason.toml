@@ -2,5 +2,5 @@
 # Mason reads it: `mason check`, `mason doctor`, `mason sync` (skills) and `mason handbook`; `mason adopt` writes it.
 [handbook]
 repo = "bitsandbricks-ch/handbook"
-profile = "web-app"   # web-app | api-only | desktop | mobile | static-site | cli-tool | multi-tool | agent | infra
+profile = "web-app"   # web-app | api-only | desktop | mobile | static-site | cli-tool | multi-tool | agent | service | plugin | library | template | docs | infra
 version = "v1"

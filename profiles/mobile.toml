@@ -3,8 +3,8 @@
 description = "A mobile app with React Native and Expo"
 status = "proposed"
 chapters = ["blocks/README.md", "blocks/ui-and-brand.md"]
-files = ["AGENTS.md", "CLAUDE.md", "README.md", "LICENSE|LICENSE.md", "SECURITY.md|.github/SECURITY.md", "renovate.json|.github/renovate.json|renovate.json5", "CHANGELOG.md|changelog.d"]
-labels = ["type:bug", "type:feature", "type:docs", "type:chore", "prio:high", "prio:normal", "prio:low", "good first issue", "blocked"]
+files = ["AGENTS.md", "CLAUDE.md", "README.md", "LICENSE|LICENSE.md", "SECURITY.md|.github/SECURITY.md", "renovate.json|.github/renovate.json|renovate.json5", ".pre-commit-config.yaml", ".editorconfig", "CHANGELOG.md|changelog.d"]
+labels = ["type:bug", "type:feature", "type:docs", "type:chore", "type:security", "prio:high", "prio:normal", "prio:low", "needs-triage", "good first issue", "blocked", "handbook"]
 skills = ["release", "pr-review", "security-review"]
 
 [check]
