@@ -1,4 +1,4 @@
-# Prompt: check a repo against the handbook
+# Audit prompt: check a repo against the handbook
 
 Paste this into an agent chat that has the repo attached. It works for app repos, plugin
 repos, agents, tools and the cluster repo. The agent reports first and changes nothing until

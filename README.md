@@ -35,7 +35,8 @@ version = "v1"
 | Decisions | [decision records](decisions/) |
 | Agents | [agent protocol](blocks/agent-protocol.md) |
 | Brand | [brand guide](brand/README.md) |
-| Templates | [AGENTS.md](templates/AGENTS.md) · [.mason.toml](templates/mason.toml) · [prompt for agent chats](templates/prompt.md) |
+| Templates | [AGENTS.md](templates/AGENTS.md) · [.mason.toml](templates/mason.toml) |
+| Prompts | [all prompts](prompts/README.md): [start](prompts/start.md) · [audit](prompts/audit.md) · [adopt](prompts/adopt.md) · [new project](prompts/new-project.md) · [catch-up](prompts/catch-up.md) · [UI migration](prompts/ui-migration.md) |
 
 ## Layout
 
@@ -45,6 +46,7 @@ blocks/      pick what you use
 profiles/    web-app, api-only, desktop, mobile, static-site, cli-tool, multi-tool, agent, infra
 decisions/   one short record per decision
 templates/   AGENTS.md, .mason.toml, repo skeletons
+prompts/     copy-paste prompts for agent chats
 skills/      shared agent skills, synced into repos by mason sync
 brand/       the generic brand guide (app assets live in each app's brand/)
 tokens/      shared design tokens package (planned)
