@@ -1,6 +1,16 @@
 # Agents and AI
 
-Coding agents work like any contributor: on a branch, through a draft PR, and they never merge, release or touch production.
+Coding agents work like any contributor: on a branch, through a PR (a draft while in progress, marked ready for review once done and green), and they never merge, release or touch production.
+
+## Reading the handbook
+
+- Before starting any task, read the latest handbook from `main`: its core chapters, plus any
+  block chapter that matches the task. Don't rely on a copy from earlier.
+- If the handbook and the instructions you were started with (a chat or agent project's
+  instructions) disagree, the handbook wins. Say so, and suggest a fix for whichever one is out of
+  date. A repo's own `AGENTS.md` may still differ with a written reason (see
+  [changing the handbook](changing-the-handbook.md)).
+- When a handbook PR merges while work is running, re-read the changed chapters before the next push.
 
 ## Instructions
 
