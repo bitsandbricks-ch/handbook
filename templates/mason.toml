@@ -1,5 +1,5 @@
 # The [handbook] table of an app repo's .mason.toml (Mason's per-repo settings file).
 # TODO: Mason reads this table (profile checks in `mason doctor`).
 [handbook]
-profile = "web-app"   # web-app | api-only | desktop | mobile | static-site | cli-tool | agent | infra
+profile = "web-app"   # web-app | api-only | desktop | mobile | static-site | cli-tool | multi-tool | agent | infra
 version = "v1"

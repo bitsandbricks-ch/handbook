@@ -1,0 +1,12 @@
+# Lands with the namespace: a LimitRange only affects pods admitted after it exists.
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: default-requests
+  namespace: <namespace>
+spec:
+  limits:
+    - type: Container
+      defaultRequest:
+        cpu: 25m
+        memory: 64Mi

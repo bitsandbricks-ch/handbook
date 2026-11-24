@@ -30,7 +30,7 @@ version = "v1"
 | Part | Pages |
 | --- | --- |
 | Core | [principles](core/principles.md) · [code](core/code.md) · [git and PRs](core/git-and-prs.md) · [GitHub](core/github.md) · [releases](core/releases.md) · [security](core/security.md) · [docs](core/docs.md) · [agents and AI](core/ai.md) · [merge conflicts](core/merge-conflicts.md) · [changing the handbook](core/changing-the-handbook.md) |
-| Blocks | [stack standard](blocks/README.md) · [modules and plugins](blocks/modules-and-plugins.md) · [local agents](blocks/local-agents.md) · [UI and brand](blocks/ui-and-brand.md) · [Kubernetes](blocks/kubernetes.md) |
+| Blocks | [stack standard](blocks/README.md) · [modules and plugins](blocks/modules-and-plugins.md) · [local agents](blocks/local-agents.md) · [UI and brand](blocks/ui-and-brand.md) · [Kubernetes](blocks/kubernetes.md) ([spec](blocks/kubernetes/), [templates](templates/kubernetes/)) |
 | Profiles | [all profiles](profiles/README.md) |
 | Decisions | [decision records](decisions/) |
 | Agents | [agent protocol](blocks/agent-protocol.md) |
@@ -42,7 +42,7 @@ version = "v1"
 ```
 core/        every project
 blocks/      pick what you use
-profiles/    web-app, api-only, desktop, mobile, static-site, cli-tool, agent, infra
+profiles/    web-app, api-only, desktop, mobile, static-site, cli-tool, multi-tool, agent, infra
 decisions/   one short record per decision
 templates/   AGENTS.md, .mason.toml, repo skeletons
 skills/      shared agent skills, synced into repos by mason sync

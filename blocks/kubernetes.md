@@ -1,7 +1,18 @@
 # Kubernetes and GitOps
 
-For cluster repos (profile `infra`). The detailed, cluster-specific rules live in the cluster
-repo's own `CONVENTIONS.md`; this chapter is the part every BitsAndBricks cluster shares.
+For cluster repos (profile `infra`) and for apps that ship to a cluster. This page is the
+summary; the spec is in four parts, with templates to copy:
+
+| Spec | Covers |
+| --- | --- |
+| [Layers, namespaces and labels](kubernetes/layers.md) | Layer model, naming, namespace files, required labels, the namespace index |
+| [Flux layout and reconciliation](kubernetes/flux.md) | Repo layout, tiers, `dependsOn` and `wait`, per-cluster values, secrets, resource requests |
+| [Exposure, DNS and TLS](kubernetes/exposure.md) | Two ingress controllers, Kyverno and CI checks, NetworkPolicies, DNS names, certificates |
+| [Runbooks](kubernetes/runbooks.md) | Add an app, an internal service, a tool, a layer; change production |
+| [Templates](../templates/kubernetes/) | Namespace, LimitRange, Flux tier, app base and overlay |
+
+A cluster repo's own `CONVENTIONS.md` keeps only what is specific to it: its nodes, its
+namespace index, its domain map and its audit history.
 
 ## GitOps
 

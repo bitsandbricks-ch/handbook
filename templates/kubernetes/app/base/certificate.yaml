@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: <app>-internal
+  namespace: <app>
+spec:
+  secretName: <app>-internal-tls     # must match the route's tls.secretName
+  issuerRef:
+    name: ${CLUSTER_ISSUER}
+    kind: ClusterIssuer
+  dnsNames:
+    - "<app>.${INTERNAL_DOMAIN}"     # e.g. <app>.k3s.vpn.example.com

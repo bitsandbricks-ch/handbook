@@ -1,0 +1,13 @@
+# clusters/<cluster>/kustomization.yaml: explicit, so Flux never sweeps the folder.
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - cluster-vars.yaml
+  - bootstrap.yaml
+  - infra-controllers.yaml
+  - security.yaml
+  - system.yaml
+  - platform.yaml
+  - middleware.yaml
+  - operations.yaml
+  - apps.yaml
