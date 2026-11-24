@@ -1,5 +1,7 @@
 # Prompt for agent chats
 
+To check a repo against the handbook, use [audit-prompt.md](audit-prompt.md).
+
 Paste this at the start of a chat or project with any coding agent. For a repo you work in
 often, put the same rules in its `AGENTS.md` instead (start from [AGENTS.md](AGENTS.md)).
 
