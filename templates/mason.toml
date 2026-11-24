@@ -1,0 +1,3 @@
+# .mason.toml in an app repo
+profile  = "web-app"   # web-app | api-only | desktop | mobile | static-site | cli-tool | agent
+handbook = "v1"
