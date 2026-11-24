@@ -25,5 +25,7 @@ Chapters:
 - [Modules, plugins and signing](modules-and-plugins.md)
 - [Local agents](local-agents.md)
 - [Agent protocol](agent-protocol.md)
-- [Kubernetes and GitOps](kubernetes.md)
+- [Kubernetes and GitOps](kubernetes.md) (Flux)
+- [Ansible](ansible.md)
+- [OpenTofu](opentofu.md)
 - [UI, tokens and brand](ui-and-brand.md)
