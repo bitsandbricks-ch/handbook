@@ -3,3 +3,5 @@
 [handbook]
 profile = "web-app"   # web-app | api-only | desktop | mobile | static-site | cli-tool | multi-tool | agent | infra
 version = "v1"
+# A repo with two kinds of project lists both, main one first (decision 0011):
+# profile = ["static-site", "service"]

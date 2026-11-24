@@ -12,5 +12,9 @@
 | `infra` | [Kubernetes and GitOps](../blocks/kubernetes.md), security, releases | Flux applies from git; reviewed MRs; backup and rollback note for production; no apply to public production without Mike's go-ahead | the cluster repo |
 | `agent` | [agent contract](../blocks/local-agents.md), Go or Python | Signed packages | Floorbit agent, Labdex agent |
 
+A repo that holds two kinds of project names both, main one first
+(`profile = ["static-site", "service"]`, [0011](../decisions/0011-several-profiles-per-repo.md)),
+and its `AGENTS.md` says which folders follow which.
+
 Desktop and mobile stay "proposed" until the first real app of that kind, so their rules
 come from a real project.

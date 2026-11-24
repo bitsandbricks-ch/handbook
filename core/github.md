@@ -6,6 +6,7 @@
 | --- | --- | --- |
 | A product with its own plugins | its own org | `hubra-app/*`, `labdex-app/*` |
 | Shared tools, small apps, the website | `bitsandbricks-ch` | handbook, Mason, Plumb, Floorbit, Seatbit, bitsandbricks.ch |
+| The tools published under mortar.ch and their landing page | `mortar-ch` ([0013](../decisions/0013-mortar-ch-org.md)) | mortar.ch |
 | Private experiments | the personal account | |
 
 A product org holds the core, its CLI, plugins, the plugin template and the marketplace index together. Anything public moves to an org.

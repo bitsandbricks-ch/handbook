@@ -10,7 +10,7 @@ Check the diff, not the whole repo. For each point that fails, say file, line an
 - [ ] No secrets, real hosts, domains, IPs or personal data; examples use `example.com`.
 - [ ] New permission or write path checked on the server and audited ([security](https://github.com/bitsandbricks-ch/handbook/blob/main/core/security.md)).
 - [ ] No hand edits to versions, lockfiles or shared files synced from `.mason`.
-- [ ] Changelog fragment added for a user-facing change.
+- [ ] Changelog fragment added for a user-facing change (repos with releases only).
 - [ ] Migrations timestamped and reversible.
 - [ ] Actions pinned to a sha; `permissions` minimal.
 - [ ] UI: empty and loading states, accent colour only for plan, approve and apply.
