@@ -22,4 +22,4 @@ Every agent follows the same contract, whatever its language. The language follo
 - Signed jobs from a fixed list. No shell.
 - Each write ability switched on separately, at both ends. Root only as a per-host opt-in.
 - Offline buffer, health and metrics, updates only from signed releases, audit log at both ends.
-- One written protocol spec (TODO: `blocks/agent-protocol.md`) with tests that a Go and a Python agent both pass.
+- One written protocol: [agent protocol](agent-protocol.md), with tests that a Go and a Python agent both pass.

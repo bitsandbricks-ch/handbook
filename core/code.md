@@ -10,6 +10,7 @@
 - Comments explain **why**, not what. Short.
 - Names: say what a thing is in the words users use; no abbreviations a newcomer can't guess.
 - **Dependencies:** add one only when it clearly pays for itself; say why in the PR. Prefer the standard library and what the stack standard already includes. Check the licence is compatible with the app's.
+- Dependency updates come from Renovate ([decision 0005](../decisions/0005-renovate.md)); lockfiles change only in its PRs or release PRs.
 - Generated files are marked in `.gitattributes` (`linguist-generated`) and never hand-edited.
 - Config comes from environment variables (or `*_FILE` for secrets), read through one settings object (Pydantic in Python).
 

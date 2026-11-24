@@ -2,7 +2,7 @@
 
 ## Brand
 
-- This handbook holds the **generic** guide: the BitsAndBricks master brand, how an app gets its sub-brand (own accent colour and logo on the shared tokens), logo rules, tone and wording. TODO: write `brand/README.md` with Mike.
+- This handbook holds the **generic** guide: the BitsAndBricks master brand, how an app gets its sub-brand (own accent colour and logo on the shared tokens), logo rules, tone and wording.See the [brand guide](../brand/README.md).
 - Each app keeps its own assets in `brand/` in its repo (Hubra and Seatbit already do). One shared script generates PNG, ICO, banners and social previews from SVG.
 - Apps share the family look through tokens and differ through their accent and logo, so they read as siblings, not the same app twice.
 

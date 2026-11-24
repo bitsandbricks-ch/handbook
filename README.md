@@ -1,8 +1,9 @@
 # BitsAndBricks handbook
 
 How we build BitsAndBricks apps: one set of rules for developers and coding agents.
-It is also Mason's defaults repo: `mason.toml` here says which settings, rulesets and
-files every repo should have, and `bnb doctor` / `bnb sync` apply them.
+The rules live here; their enforcement lives in [`bitsandbricks-ch/.mason`](https://github.com/bitsandbricks-ch/.mason),
+Mason's defaults repo (`mason.toml`, rulesets, shared files), which `mason doctor` and
+`mason sync` apply to every repo.
 
 > Status: **draft v1**, under review by Mike. Nothing here is enforced yet.
 
@@ -18,9 +19,10 @@ Each repo has a `.mason.toml` that names its profile and the handbook version it
 and an `AGENTS.md` that links here and lists only what is different for that repo.
 
 ```toml
-# .mason.toml in an app repo
-profile  = "web-app"
-handbook = "v1"
+# .mason.toml in an app repo (Mason's per-repo settings file)
+[handbook]
+profile = "web-app"
+version = "v1"
 ```
 
 ## Contents
@@ -31,6 +33,8 @@ handbook = "v1"
 | Blocks | [stack standard](blocks/README.md) · [modules and plugins](blocks/modules-and-plugins.md) · [local agents](blocks/local-agents.md) · [UI and brand](blocks/ui-and-brand.md) |
 | Profiles | [all profiles](profiles/README.md) |
 | Decisions | [decision records](decisions/) |
+| Agents | [agent protocol](blocks/agent-protocol.md) |
+| Brand | [brand guide](brand/README.md) |
 | Templates | [AGENTS.md](templates/AGENTS.md) · [.mason.toml](templates/mason.toml) |
 
 ## Layout
@@ -41,16 +45,14 @@ blocks/      pick what you use
 profiles/    web-app, api-only, desktop, mobile, static-site, cli-tool, agent
 decisions/   one short record per decision
 templates/   AGENTS.md, .mason.toml, repo skeletons
-skills/      shared agent skills, synced into repos by bnb sync
+skills/      shared agent skills, synced into repos by mason sync
 brand/       the generic brand guide (app assets live in each app's brand/)
 tokens/      shared design tokens package (planned)
-mason.toml   groups, settings, rulesets, files to sync (moved from bitsandbricks-ch/.mason)
-rulesets/    branch and tag rulesets as JSON
-files/       shared files per group
+LICENSE.md   CC BY 4.0 for the text, MIT for templates and skills
 ```
 
 ## Changing the handbook
 
 Open a draft PR. A rule change that affects other repos says which ones and how they
-follow (usually a `bnb sync` run). Releases are tagged `v1`, `v1.1`, ...; repos pin the
+follow (usually a `mason sync` run). Releases are tagged `v1`, `v1.1`, ...; repos pin the
 major version in `.mason.toml`.
