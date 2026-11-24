@@ -13,3 +13,4 @@ Agents read these before proposing a change to a settled question.
 | [0006](0006-several-migration-heads.md) | Several migration heads are allowed when a test checks them | 2026-11-24 |
 | [0007](0007-validation-library-per-app.md) | Existing apps keep their validation library | 2026-11-24 |
 | [0008](0008-runtime-settings-in-the-app.md) | Settings admins change live in the app, env gives the default | 2026-11-24 |
+| [0016](0016-keyless-image-signing.md) | Images are signed keyless with cosign | 2026-11-24 |
