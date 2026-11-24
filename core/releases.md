@@ -1,5 +1,8 @@
 # Releases
 
+These rules apply to repos that tag releases. A repo that deploys every merge and is never
+released keeps no version and no changelog ([0012](../decisions/0012-no-changelog-without-releases.md)).
+
 - Versions are changed only by the release tooling: `mason bump <minor|patch>` opens a PR with the version and the changelog section; `mason release tag` tags it. Never by hand in a feature PR.
 - Changelog: one fragment file per change in `changelog.d/` (or `changes/`), collected into `CHANGELOG.md` at release.
 - Where each repo keeps its version and changelog is set in `mason.toml` (`version = ...`, `changelog = [...]`).
