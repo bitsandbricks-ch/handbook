@@ -16,7 +16,7 @@ Bring this repository in line with the BitsAndBricks handbook
 4. Where the repo should keep differing from the handbook, write it in AGENTS.md under
    "Differs from the handbook" with the reason, and offer a handbook PR if others should follow.
 
-Never merge, never push tags, never change versions, never weaken a check. Ask when unsure.
+Turn on auto-merge where core/git-and-prs.md allows it; never merge by hand, never push tags, never change versions, never weaken a check. Ask when unsure.
 
 Audit report:
 <paste here>

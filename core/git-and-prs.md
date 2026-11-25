@@ -6,7 +6,16 @@
 - Before pushing, run what CI runs. Fix failing checks yourself; never skip, disable or weaken a test or a check to get green.
 - **Done** = task complete, checklist ticked, checks green; then mark the PR **ready for review** right away.
   A draft means work in progress; never leave a finished PR as a draft.
-- Never merge your own PR, never force-push a branch someone else works on, never push a tag. Merging and releasing are the maintainer's call.
+- **Auto-merge by default** ([0017](../decisions/0017-auto-merge-by-default.md)): when a PR is done and marked ready,
+  its author (person or agent) turns on GitHub auto-merge with squash
+  (`gh pr merge <n> --auto --squash`). GitHub merges it once the required check passes; nobody clicks merge.
+  Turn it on only after the PR's own review is done (the [pr-review skill](../skills/pr-review/SKILL.md) for agents),
+  CI is green and the screenshots are in. A new push that needs another look: turn it off first.
+- No auto-merge, the maintainer merges by hand: PRs whose merge deploys or publishes to public production
+  (infra applies, the marketplace index, a site deployed on merge), version PRs from `mason bump`, PRs that touch
+  keys, signing, sign-in, the plugin sandbox or release workflows (`CODEOWNERS` security paths), and handbook PRs.
+  The maintainer can turn auto-merge off on any PR.
+- Never merge by hand, never force-push a branch someone else works on, never push a tag, never change a version. Releasing is the maintainer's call.
 - Keep the PR description current when you push more commits.
 - Squash merge: `main` reads one commit per PR, and the **PR title** becomes that commit.
 - Commits and PR titles follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)

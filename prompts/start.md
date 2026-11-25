@@ -14,7 +14,7 @@ Before you start:
 
 While you work:
 - Follow core/git-and-prs.md: your own branch, a draft PR with the template, marked ready
-  for review once done and green, never merge, never push tags, never change versions by hand.
+  for review once done and green, turn on auto-merge as core/git-and-prs.md says (never merge by hand), never push tags, never change versions by hand.
 - Follow core/security.md: read-only first, permission checks on the server, no secrets,
   no real hosts, domains or IPs (use example.com).
 - Use the skills in skills/ when they fit (release, new-migration, pr-review,
