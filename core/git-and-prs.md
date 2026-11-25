@@ -9,8 +9,10 @@
 - **Auto-merge by default** ([0017](../decisions/0017-auto-merge-by-default.md)): when a PR is done and marked ready,
   its author (person or agent) turns on GitHub auto-merge with squash
   (`gh pr merge <n> --auto --squash`). GitHub merges it once the required check passes; nobody clicks merge.
-  Turn it on only after the PR's own review is done (the [pr-review skill](../skills/pr-review/SKILL.md) for agents),
-  CI is green and the screenshots are in. A new push that needs another look: turn it off first.
+  Turn it on when the PR is marked ready: its own review done (the [pr-review skill](../skills/pr-review/SKILL.md) for agents)
+  and the screenshots in. Don't wait for CI: GitHub waits for the required check, and it refuses auto-merge on a PR
+  whose checks have all passed already. Then squash-merge it directly (`gh pr merge <n> --squash`), which is what
+  auto-merge would have done. A new push that needs another look: turn auto-merge off first.
 - No auto-merge, the maintainer merges by hand: PRs whose merge deploys or publishes to public production
   (infra applies, the marketplace index, a site deployed on merge), version PRs from `mason bump`, PRs that touch
   keys, signing, sign-in, the plugin sandbox or release workflows (`CODEOWNERS` security paths), and handbook PRs.
