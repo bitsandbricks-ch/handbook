@@ -1,6 +1,6 @@
 # Agents and AI
 
-Coding agents work like any contributor: on a branch, through a PR (a draft while in progress, marked ready for review once done and green), and they never merge, release or touch production.
+Coding agents work like any contributor: on a branch, through a PR (a draft while in progress, marked ready for review once done and green), and they turn on auto-merge once done ([git and PRs](git-and-prs.md)) but never merge by hand, release or touch production.
 
 ## Reading the handbook
 

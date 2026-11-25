@@ -19,3 +19,4 @@ Agents read these before proposing a change to a settled question.
 | [0014](0014-one-release-flow.md) | One release flow: Mason tags, the workflow publishes and creates the release | 2026-11-24 |
 | [0015](0015-image-tags.md) | Image tags: `dev` and `sha-*` from `main`, versions promoted on release | 2026-11-24 |
 | [0016](0016-keyless-image-signing.md) | Images are signed keyless with cosign | 2026-11-24 |
+| [0017](0017-auto-merge-by-default.md) | Pull requests merge themselves once green (auto-merge) | 2026-11-25 |

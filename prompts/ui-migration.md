@@ -14,5 +14,5 @@ following blocks/ui-and-brand.md in https://github.com/bitsandbricks-ch/handbook
 3. A component the package lacks or gets wrong: propose a PR to bitsandbricks-ch/ui, don't
    fork it here.
 
-Tests and lint pass at every step. Never merge, never push tags, never change versions.
+Tests and lint pass at every step. Never merge by hand, never push tags, never change versions.
 ```

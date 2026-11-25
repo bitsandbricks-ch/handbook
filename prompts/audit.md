@@ -44,7 +44,7 @@ https://github.com/bitsandbricks-ch/handbook (read it from main).
    list it under "Handbook feedback" (core/changing-the-handbook.md). Don't change the handbook.
 
 Rules: change nothing until I say which fixes to do. Then one topic per branch and draft PR,
-following core/git-and-prs.md. Never merge, never push tags, never change versions, never
+following core/git-and-prs.md. Never merge by hand, never push tags, never change versions, never
 weaken a check. If something is unclear, ask.
 ```
 

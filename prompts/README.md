@@ -14,4 +14,4 @@ that `mason sync` ships with the repo.
 | [ui-migration](ui-migration.md) | Moving an app onto `@bitsandbricks/tokens`, `ui` and `widgets` | Hubra, Floorbit (ui); Labdex, Mason, Seatbit (tokens only) |
 
 Every prompt keeps the same rules: draft PRs marked ready for review once done and green,
-one topic per branch, never merge, never push tags, never change versions, never weaken a check, ask instead of guessing.
+one topic per branch, auto-merge where core/git-and-prs.md allows it, never merge by hand, never push tags, never change versions, never weaken a check, ask instead of guessing.
