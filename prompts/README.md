@@ -11,6 +11,7 @@ that `mason sync` ships with the repo.
 | [adopt](adopt.md) | Bringing a repo onto the handbook after an audit | All repos |
 | [new-project](new-project.md) | Starting a new app, plugin, agent or tool | New repos |
 | [catch-up](catch-up.md) | The handbook changed and a repo should follow | Repos whose `.mason.toml` pins an older handbook version |
+| [pr-screenshots](pr-screenshots.md) | PR screenshots don't load, or a repo has no CI screenshot comment yet | Every repo with PRs that show UI |
 | [ui-migration](ui-migration.md) | Moving an app onto `@bitsandbricks/tokens`, `ui` and `widgets` | Hubra, Floorbit (ui); Labdex, Mason, Seatbit (tokens only) |
 
 Every prompt keeps the same rules: draft PRs marked ready for review once done and green,
